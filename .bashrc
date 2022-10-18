@@ -1,3 +1,9 @@
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
+
 # infinite history
 export HISTFILESIZE=
 export HISTSIZE=
@@ -18,4 +24,5 @@ alias zet='export current_path=$(pwd); cd $HOME/workspace/zet; mkdir $(date +%Y%
 alias hej='echo $(date +%Y%m%d%H%M%S)'
 alias a='sudo apt'
 alias SS='sudo systemctl'
+
 
